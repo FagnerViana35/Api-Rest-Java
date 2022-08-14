@@ -4,15 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="5sp"
+    >
+
+
+    <TextView
+        android:id="@+id/Label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nameFull"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:labelFor="@+id/inputNameFull"
+        />
+    <EditText
+        android:id="@+id/inputNameFull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/Label_name"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/inputNameFull"
+        android:id="@+id/Label_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:labelFor="@+id/inputPhone"
+        />
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/Label_phone"
+        android:hint="EX: 12-93456-7890"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/inputPhone"
+        android:id="@+id/Label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        android:labelFor="@+id/inputPhone"
+        />
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/Label_email"
+        />
+
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/checkbox1"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/Label_Sexo"
+        android:text="@string/Sexo"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox1"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexo_group"
+        app:layout_constraintTop_toBottomOf="@+id/Label_Sexo"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sexo_masculino"
+            android:text="@string/masculino"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sexo_feminino"
+            android:text="@string/feminino"
+            />
+    </RadioGroup>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/sexo_group"
+        android:id="@+id/Label_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:labelFor="@+id/inputCity"
+        />
+    <EditText
+        android:id="@+id/inputCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/Label_city"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/inputCity"
+        android:id="@+id/Label_Uf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uf"
+        app:layout_constraintStart_toStartOf="parent"
+        android:labelFor="@+id/inputUf"
+        />
+    <Spinner
+        android:id="@+id/inputUf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Label_Uf"
+        android:entries="@array/ufArray"
+        />
+
+    <Button
+        android:id="@+id/botaoLimpar"
+        android:text="@string/Limpar"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/inputUf"/>
+
+    <Button
+        android:id="@+id/botaoSalvar"
+        android:text="@string/Salvar"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/inputUf"
+        app:layout_constraintStart_toEndOf="@+id/botaoLimpar"
+
+        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

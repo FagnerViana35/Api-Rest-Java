@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">Cadastro</string>
+    <string name="nameFull">Nome Completo</string>
+    <string name="phone">Telefone</string>
+    <string name="email">E-mail</string>
+    <string name="checkbox">Ingressor na lista de e-mails?</string>
+    <string name="Sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="city">Cidade</string>
+    <string name="uf">UF</string>
+    <string name="Limpar">Limpar</string>
+    <string name="Salvar">Salvar</string>
+    <string-array name="ufArray">
+        <item>AC Acre</item>
+        <item>AL Alagoas</item>
+        <item>AP Amapá</item>
+        <item>AM Amazonas</item>
+        <item>CE Ceará</item>
+        <item>DF Distrito Federal</item>
+        <item>ES Espírito Santo</item>
+        <item>GO Goiás</item>
+        <item>MA Maranhão</item>
+        <item>MT Mato Grosso</item>
+        <item>MS Mato Grosso do Sul</item>
+        <item>MG Minas Gerais</item>
+        <item>PA Pará</item>
+        <item>PB Paraíba</item>
+        <item>PR Paraná</item>
+        <item>PE Pernambuco</item>
+        <item>PI Piauí</item>
+        <item>RN Rio Grande do Norte</item>
+        <item>RS Rio Grande do Sul</item>
+        <item>RO Rondônia</item>
+        <item>RR Roraima</item>
+        <item>SC Santa Catarina</item>
+        <item>SP São Paulo</item>
+        <item>SE Sergipe</item>
+        <item>TO Tocantins</item>
+    </string-array>
 </resources>
