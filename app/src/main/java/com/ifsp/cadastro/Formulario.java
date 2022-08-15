@@ -79,13 +79,13 @@ public class Formulario {
     @Override
     public String toString() {
         return "Formulario{" +
-                "name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", checkoutEmails=" + checkoutEmails +
-                ", sexo='" + sexo + '\'' +
-                ", city='" + city + '\'' +
-                ", uf='" + uf + '\'' +
+                "Nome='" + name + '\'' +
+                ", Telefone='" + phone + '\'' +
+                ", E-mail='" + email + '\'' +
+                ", Checagem de E-mail=" + checkoutEmails +
+                ", Sexo do Usuáio='" + sexo + '\'' +
+                ", Didade='" + city + '\'' +
+                ", Estado='" + uf + '\'' +
                 '}';
     }
 }
